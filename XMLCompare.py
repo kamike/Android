@@ -56,3 +56,4 @@ out_file.write("<resources>\n")
 for key in differentDir:
     out_file.write("<string name=\"" + key + "\">" + differentDir.get(key) + "</string>\n")
 out_file.write("</resources>")
+
