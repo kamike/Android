@@ -13,8 +13,8 @@ import operator as op
 import openpyxl
 from openpyxl import load_workbook
 
-workbook = load_workbook("C:/Users/wangtao/Desktop/FiiiPOS国际化.xlsx")
-sheel = workbook["062018"]
+workbook = load_workbook("C:\\Users\\wangtao\\Desktop\\Fiiipay文件\\script\\FiiiPay迭代翻译.xlsx")
+sheel = workbook["Sheet1"]
 dirctZh = {}
 i = 1
 for row in sheel.rows:
@@ -24,7 +24,7 @@ for row in sheel.rows:
     if colKey is None:
         break
     # 第三列
-    colValue = sheel.cell(row=i, column=3).value
+    colValue = sheel.cell(row=i, column=4).value
     dirctZh[colKey] = colValue
 
 print(dirctZh)  # 打印结果
