@@ -1,0 +1,1 @@
+Android自动生成XML字符串
